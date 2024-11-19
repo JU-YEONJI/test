@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+
+        const student= {
+            name : 'lee',
+            kor : 90,
+            eng : 100,
+            mat : 85
+        };
+
+        document.write('이름 : '+student.name+"<br>");
+        document.write('국어 : '+student.kor+"<br>");
+        document.write('영어 : '+student.eng+"<br>");
+        document.write('수학 : '+student.mat+"<br>");
+
+        const tot = (student.kor + student.eng + student.mat);
+        const ave = tot/3;
+        document.write("총점 : " +tot+"<br>");
+        document.write("평균: " + ave.toFixed(1) + "<br>");
+        // toFixed를 사용하면 숫자에서 원하는 소수점 길이만큼만 반올림해서 반환해줌
+
+    </script>
+
+</body>
+</html>

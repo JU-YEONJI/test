@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+let person = {
+    name : "kim",
+    age : 25,
+    location : "서울"
+};
+
+
+const KeyArr = Object.keys(person);
+for (let key of KeyArr){
+    let value = person[key];
+    console.log(key, value);
+}
+
+//괄호표기법으로 프로퍼티의 key뿐 아니라 value도 불러올 수 있음.
+
+
+
+for(let key in person){
+    let value=person[key];
+    console.log(key, value);
+}
+
+
+/*for ... in 문을 사용하면 Object.keys 메서드보다 더 간단하게 객체를 순회할 수 있음
+for ... in 문은 오른쪽에 있는 객체에서 프로파티의 key 를 하나씩 순서대로 변수 key에 저장함.
+즉 객체 프로피티의 key를 순회함
+*/
+
+
+    </script>
+
+
+</body>
+</html>
